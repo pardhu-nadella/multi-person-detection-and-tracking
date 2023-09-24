@@ -32,9 +32,10 @@ pip install opencv-python numpy
 
 
 # Setup
+```bash
 git clone https://github.com/pardhu-nadella/multi-person-detection-and-tracking.git
 cd person-detection-and-tracking
-
+```
 
 
 
