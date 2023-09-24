@@ -57,8 +57,8 @@ cap = cv2.VideoCapture("path_to_an_mp4_file.mp4")
 
 
 # Controls
-Press 'a' to toggle processing frames on and off.
-Press 'q' to exit the application.
+- Press 'a' to toggle processing frames on and off.
+- Press 'q' to exit the application.
 
 
 
