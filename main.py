@@ -5,13 +5,13 @@ import math
 import random
 
 
+
+
 '''
 USE THE PROPER VIDEO SOURCE
                     0 -> In the case of a laptop, it is a webcam. Otherwise, it is the first detected webcam
 "path_to_an_mp4_file" -> A pre recorded video
 '''
-
-
 
 # videoSource = 0
 videoSource = "testVideo.mp4"
@@ -65,10 +65,10 @@ def plotTrajectories(frame):
         for i in person.trajectory:
             x, y = i[0], i[1]
             color = person.color
-            frame = cv2.circle(frame, (x, y), 5, color, cv2.FILLED)
+            frame = cv2.circle(frame, (x, y), 3, color, cv2.FILLED)
             
             if prev_point is not None:
-                frame = cv2.line(frame, prev_point, (x, y), color, 2)  # Draw a line to the previous point
+                frame = cv2.line(frame, prev_point, (x, y), color, 1)  # Draw a line to the previous point
             prev_point = (x, y)  # Update the previous point
 
     return frame
@@ -170,13 +170,12 @@ with open("coco.names", "r") as f:
 
 ## Set the window size (adjust as needed)
 cv2.namedWindow("Person Tracking", cv2.WINDOW_NORMAL)
-cv2.resizeWindow("Person Tracking", 800, 600)
 
 
 while True:
-    ret, frame = cap.read()
     startTime = time.time()
-    print(processFrame)
+    ret, frame = cap.read()
+    frame = cv2.resize(frame, (800, 600))
     if processFrame == True:
         # Detect objects in the frame
         blob = cv2.dnn.blobFromImage(frame, 0.00392, (416, 416), swapRB=True, crop=False)
@@ -215,15 +214,8 @@ while True:
     
     
 
-    
-    # Display the frame
-    endTime = time.time()
-    if startTime == endTime:
-        fps = 60
-    else:
-        fps = 1/(endTime-startTime)
-    cv2.putText(frame, f"FPS: {fps:.2f}", (10, 30), font, 2, (255,0,0), 2)
-    cv2.imshow("Person Tracking", frame)
+
+    peopleCount = len(people)
 
     # Exit the loop when 'q' is pressed
     key = None
@@ -234,6 +226,17 @@ while True:
         processFrame = not processFrame
     if not processFrame:
         people = []
+
+
+    endTime = time.time()
+    if startTime == endTime:
+        fps = 60
+    else:
+        fps = 1/(endTime-startTime)
+
+    cv2.putText(frame, f"People Count: {peopleCount}", (600, 30), font, 1.5, (255,0,0), 2)
+    cv2.putText(frame, f"FPS: {fps:.2f}", (10, 30), font, 1.5, (255,0,0), 2)
+    cv2.imshow("Person Tracking", frame)
 
 # Release the video capture and close the OpenCV windows
 cap.release()
