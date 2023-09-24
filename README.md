@@ -71,3 +71,11 @@ The script is set to run on CPU by default. To enable GPU acceleration, uncommen
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 ```
+
+
+
+
+
+You're encouraged to actively contribute to this personal repository by enhancing its functionality, introducing innovative features, or optimizing it in any way you can. If you encounter any challenges or have valuable insights to share, please don't hesitate to open a GitHub issue. Your input is highly appreciated, and your collaboration in refining this project for even better results is welcome.
+
+For engaging discussions and further communication, please feel free to connect with the repository owner on LinkedIn. Your feedback is valued. Here's to a successful journey in the realm of person detection and tracking!
