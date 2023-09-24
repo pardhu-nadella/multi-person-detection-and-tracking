@@ -24,6 +24,7 @@ You can install the required Python libraries using pip:
 
 ```bash
 pip install opencv-python numpy
+```
 
 
 
@@ -39,18 +40,19 @@ cd person-detection-and-tracking
 
 # Usage
 To run the person detection and tracking script, use the following command:
-'''bash
+```bash
 python main.py
-
+```
 
 You can change the video source by modifying the cap variable. For example, to use a webcam, set cap to:
 '''bash
 cap = cv2.VideoCapture(0)
+```
 
 To use a video file, provide the file path:
-'''bash
+```bash
 cap = cv2.VideoCapture("path_to_an_mp4_file.mp4")
-
+```
 
 
 # Controls
@@ -62,8 +64,8 @@ Press 'q' to exit the application.
 # Notes
 The script is set to run on CPU by default. To enable GPU acceleration, uncomment the net.setPreferableBackend and net.setPreferableTarget lines accordingly.
 
-'''
-bash
+```bash
 # For GPU acceleration
 net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
+```
