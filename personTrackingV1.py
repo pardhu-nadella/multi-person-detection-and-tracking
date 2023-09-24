@@ -3,9 +3,9 @@ import numpy as np
 import time
 import math
 import random
-
-
-
+'''
+THIS CODE IS THE INITIAL VERSION OF PERSON TRACKING.
+'''
 
 '''
 USE THE PROPER VIDEO SOURCE
