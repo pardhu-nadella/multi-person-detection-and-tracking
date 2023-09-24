@@ -46,7 +46,7 @@ python main.py
 ```
 
 You can change the video source by modifying the cap variable. For example, to use a webcam, set cap to:
-'''bash
+```bash
 cap = cv2.VideoCapture(0)
 ```
 
