@@ -80,6 +80,9 @@ net.setPreferableBackend(cv2.dnn.DNN_BACKEND_CUDA)
 net.setPreferableTarget(cv2.dnn.DNN_TARGET_CUDA)
 ```
 
+# Example Output
+<a href="https://youtu.be/8HyhrgQ-PSM">Follow this link for video output</a>
+
 
 
 
