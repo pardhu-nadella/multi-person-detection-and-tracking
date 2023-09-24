@@ -36,6 +36,10 @@ pip install opencv-python numpy
 git clone https://github.com/pardhu-nadella/multi-person-detection-and-tracking.git
 cd multi-person-detection-and-tracking
 ```
+Download the dependencies for this project in the same working directory.
+```bash
+https://drive.google.com/drive/folders/1Pq50P4fP7vW6Nf7abVMjwEoDn-QBaXvz?usp=sharing
+```
 
 
 
