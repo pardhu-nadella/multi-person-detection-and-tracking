@@ -17,8 +17,8 @@ Before running the script, ensure you have the following prerequisites installed
 - OpenCV (cv2)
 - NumPy
 - CUDA (optional for GPU acceleration)
-- YOLOv3 weights and configuration files
-- COCO names file
+- YOLOv3 weights and configuration files (Included in this repository)
+- COCO names file (Included in this repository)
 
 You can install the required Python libraries using pip:
 
