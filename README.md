@@ -46,6 +46,7 @@ python main.py
 ```
 
 You can change the video source by modifying the cap variable. For example, to use a webcam, set cap to:
+(Lines 16 and 17)
 ```bash
 cap = cv2.VideoCapture(0)
 ```
@@ -63,7 +64,7 @@ cap = cv2.VideoCapture("path_to_an_mp4_file.mp4")
 
 
 # Notes
-The script is set to run on CPU by default. To enable GPU acceleration, uncomment the net.setPreferableBackend and net.setPreferableTarget lines accordingly.
+The script is set to run on CPU by default. To enable GPU acceleration, uncomment the net.setPreferableBackend and net.setPreferableTarget lines (28 and 29 lines) accordingly.
 
 ```bash
 # For GPU acceleration
