@@ -54,7 +54,7 @@ To use a video file, provide the file path:
 ```bash
 cap = cv2.VideoCapture("path_to_an_mp4_file.mp4")
 ```
-(Lines 16 and 17)
+(Lines 16 and 17 in main.py)
 
 
 # Controls
@@ -64,7 +64,7 @@ cap = cv2.VideoCapture("path_to_an_mp4_file.mp4")
 
 
 # Notes
-The script is set to run on CPU by default. To enable GPU acceleration, uncomment the net.setPreferableBackend and net.setPreferableTarget lines (28 and 29 lines) accordingly.
+The script is set to run on CPU by default. To enable GPU acceleration, uncomment the net.setPreferableBackend and net.setPreferableTarget lines (lines 28 and 29 in main.py) accordingly.
 
 ```bash
 # For GPU acceleration
