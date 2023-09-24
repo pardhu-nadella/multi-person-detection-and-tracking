@@ -2,7 +2,7 @@
 
 This repository contains a Python script for person detection and tracking using the YOLOv3 object detection model and OpenCV. The script processes a video stream or video file and detects and tracks people in real-time. Note that the script currently runs on CPU, so the frame rate may be limited compared to GPU-accelerated implementations.
 
-## Version
+## Versions
 
 - personTrackingV1.py -> Contains bare minimum backbone of multi person detection and tracking by creating an object for every person and plotting their prajectory.
 - personTrackingV2.py -> Updated version of personTrackingV1.py. Counting the number of people going in and coming out is done. Didn't give good enough results.
